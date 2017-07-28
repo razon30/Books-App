@@ -1,4 +1,4 @@
-package razon.nctballbooksfree.Model;
+package razon.nctballbooksfree.model;
 
 /**
  * Created by razon30 on 26-07-17.
@@ -12,14 +12,16 @@ public class Book {
     String size;
     String cls;
     String id;
+    String fileName;
 
-    public Book(String name, String url, String writter, String size, String cls, String id) {
+    public Book(String name, String url, String writter, String size, String cls, String id, String fileName) {
         this.name = name;
         this.url = url;
         this.writter = writter;
         this.size = size;
         this.cls = cls;
         this.id = id;
+        this.fileName = fileName;
     }
 
     public String getName() {
@@ -68,5 +70,13 @@ public class Book {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getFileName() {
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
     }
 }
