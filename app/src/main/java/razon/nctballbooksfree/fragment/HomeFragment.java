@@ -1,8 +1,10 @@
-package razon.nctballbooksfree;
+package razon.nctballbooksfree.fragment;
 
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,10 +12,14 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
-import jp.wasabeef.recyclerview.animators.adapters.SlideInRightAnimationAdapter;
+import razon.nctballbooksfree.R;
+import razon.nctballbooksfree.activity.HomeActivity;
+import razon.nctballbooksfree.adapter.AdapterHomeRecycler;
 import razon.nctballbooksfree.model.ClassModel;
 import razon.nctballbooksfree.utils.ClassificationNode;
+import razon.nctballbooksfree.utils.ClickListener;
 import razon.nctballbooksfree.utils.MyRecyclerView;
+import razon.nctballbooksfree.utils.RecyclerTOuchListener;
 
 
 /**
@@ -32,6 +38,10 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
+        HomeActivity.CurrentPage = ClassificationNode.HOME;
+
+        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("Class Wise Books");
+
         classList = new ArrayList<>();
         populateData();
         recyclerView = (MyRecyclerView) view.findViewById(R.id.home_recycler);
@@ -39,7 +49,30 @@ public class HomeFragment extends Fragment {
         staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
 
         recyclerView.setLayoutManager(staggeredGridLayoutManager);
-        recyclerView.setAdapter(new SlideInRightAnimationAdapter(adapter));
+        recyclerView.setAdapter(adapter);
+
+
+        recyclerView.addOnItemTouchListener(new RecyclerTOuchListener(getActivity(), recyclerView, new ClickListener() {
+            @Override
+            public void onCLick(View v, int position) {
+
+                BookListFragment bookListFragment = new BookListFragment();
+                String identifier = classList.get(position).getClsIdentifier();
+                Bundle bundle = new Bundle();
+                bundle.putString("id", identifier);
+                bookListFragment.setArguments(bundle);
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                transaction.setCustomAnimations(R.anim.slide_in_from_right, R.anim.fade_out);
+                transaction.replace(R.id.fragment_container, bookListFragment);
+                transaction.commit();
+
+            }
+
+            @Override
+            public void onLongClick(View v, int position) {
+
+            }
+        }));
 
         return view;
     }

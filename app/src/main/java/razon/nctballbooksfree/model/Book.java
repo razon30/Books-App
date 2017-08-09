@@ -1,10 +1,14 @@
 package razon.nctballbooksfree.model;
 
+import io.realm.RealmObject;
+
 /**
  * Created by razon30 on 26-07-17.
  */
 
-public class Book {
+public class Book extends RealmObject{
+
+    public Book(){}
 
     String name;
     String url;

@@ -17,4 +17,8 @@ public class ClassificationNode {
     public static String clasNineTen = "Nine-Ten";
     public static String clasElevenTwelve = "Eleven-Twelve";
 
+    public static String HOME = "homeFragment";
+    public static String BOOK_LIST = "bookListFragment";
+    public static String PDF_VIew = "homefragment";
+
 }
