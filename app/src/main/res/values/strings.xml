@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">NCTB all Books Free</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--&lt;!&ndash;Test ad unit&ndash;&gt;-->
+    <!--<string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--<string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>-->
+
+    <!--Real ad unit-->
+    <string name="banner_ad_unit_id">ca-app-pub-7553445512796474/9767247184</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-7553445512796474/7775508664</string>
+
 </resources>

@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/NCTBallBooksFree.iml" filepath="$PROJECT_DIR$/NCTBallBooksFree.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nctb-all-books-free.iml" filepath="$PROJECT_DIR$/nctb-all-books-free.iml" />
     </modules>
   </component>
 </project>
