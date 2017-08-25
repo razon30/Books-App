@@ -1,27 +1,35 @@
 {
   "project_info": {
-    "project_number": "380860620173",
-    "firebase_url": "https://nctb-teachers-guide.firebaseio.com",
-    "project_id": "nctb-teachers-guide",
-    "storage_bucket": "nctb-teachers-guide.appspot.com"
+    "project_number": "515490364461",
+    "firebase_url": "https://nctb-all-books-free.firebaseio.com",
+    "project_id": "nctb-all-books-free",
+    "storage_bucket": "nctb-all-books-free.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:380860620173:android:b559f901e240925e",
+        "mobilesdk_app_id": "1:515490364461:android:6503efae7453dc41",
         "android_client_info": {
-          "package_name": "razon.nctbteachersguide"
+          "package_name": "razon.nctballbooksfree"
         }
       },
       "oauth_client": [
         {
-          "client_id": "380860620173-f721ok41hhm7nr0bhivkv0o9c0ngpoqi.apps.googleusercontent.com",
+          "client_id": "515490364461-0k47c0uo936qrau2q4qioclrur0d3ato.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "razon.nctballbooksfree",
+            "certificate_hash": "6877d216f09dea7f15a9e2a9e12f6e3fc5a2b12d"
+          }
+        },
+        {
+          "client_id": "515490364461-l4a10vu7h2dhlvt9i1pb6mt7g8ba55a6.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDzrjOM-5WFz0ofyBSLGYHnY1UoPNxTd1A"
+          "current_key": "AIzaSyADBpj7S-TqiasvzwWoe_MB0TMJ-JgAlvo"
         }
       ],
       "services": {
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515490364461-l4a10vu7h2dhlvt9i1pb6mt7g8ba55a6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
