@@ -33,6 +33,9 @@ public class HomeActivity extends AppCompatActivity {
     MaterialRippleLayout rateTheApp;
     MaterialRippleLayout otherApps;
 
+
+
+
     ImageView share;
 
     public static InterstitialAd mInterstitialAd;
