@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <razon.nctballbooksfree.utils.MyTextView
+                <razon.nctbteachersguide.utils.MyTextView
                     android:id="@+id/tvSub"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <razon.nctballbooksfree.utils.MyTextView
+                <razon.nctbteachersguide.utils.MyTextView
                     android:id="@+id/tvClass"
                     android:layout_width="0dp"
                     android:layout_weight="1"
@@ -61,7 +61,7 @@
                     android:textSize="16dp"
                  />
 
-                <razon.nctballbooksfree.utils.MyTextView
+                <razon.nctbteachersguide.utils.MyTextView
                     android:id="@+id/tvSize"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

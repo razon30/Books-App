@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundColor"
-    tools:context="razon.nctballbooksfree.fragment.BookListFragment">
+    tools:context="razon.nctbteachersguide.fragment.BookListFragment">
 
-    <razon.nctballbooksfree.utils.MyBookListRecyclerView
+    <razon.nctbteachersguide.utils.MyBookListRecyclerView
         android:id="@+id/book_list_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
